@@ -1,0 +1,66 @@
+.cardapio__container {
+  align-content: flex-start;
+
+  border: 12px solid var(#ffffff);
+  background-color: var(--branco);
+  color: var(--preto);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin: 15px 5px 15px 5px;
+  padding: 5px 0 5px 0;
+}
+
+.cardapio__container p {
+  font-size: 0.875em;
+}
+
+ul {
+  display: grid;
+  gap: 24px;
+  list-style: none;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+li .imagem__produto {
+  width: 80px;
+  height: 80px;
+  background: white;
+  grid-row: 1 / -3;
+  height: 100%;
+}
+
+li .imagem__produto img {
+  width: 100%;
+  height: 80%;
+  padding-right: 0.5em;
+
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+li strong {
+  align-self: flex-start;
+}
+
+h5 {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-family: var(--fonte-primaria);
+}
+
+h3,
+h1 {
+  font-family: var(--fonte-terciaria);
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}

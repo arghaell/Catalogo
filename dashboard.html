@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css/main.css" />
+    <link rel="shortcut icon" href="/imagens/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css/cardapio.css" />
+    <link rel="stylesheet" href="styles.css/dashboard.css" />
+    <title>Açaí Shop</title>
+  </head>
+  <body>
+    <div class="container__principal">
+      <header class="cabecalho">
+        <a href="index.html"
+          ><img
+            src="/imagens/logo.png"
+            alt="Logomarca Açaí Puríssimo"
+            class="logo"
+        /></a>
+        <p class="title">
+          + Cremoso e + Gostoso! <br />
+          Aberto todos os dias das 8h às 19h
+        </p>
+      </header>
+      <hr />
+      <br />
+      <h1>Tabela de preços</h1>
+      <br />
+
+      <table class="tabelaPrecos">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Valor (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Açaí em camadas</td>
+            <td>Açaís</td>
+            <td>24,90</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Açaí na tigela</td>
+            <td>Açaís</td>
+            <td>22,90</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Banofíssimo</td>
+            <td>Açaís</td>
+            <td>34,90</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Cremíssimo</td>
+            <td>Cremes</td>
+            <td>29,90</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Casadíssimo</td>
+            <td>Cremes</td>
+            <td>29,90</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>Shakíssimo</td>
+            <td>Bebidas</td>
+            <td>24,90</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>Aguá mineral</td>
+            <td>Bebidas</td>
+            <td>5,00</td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>Refrigerantes Lata</td>
+            <td>Bebidas</td>
+            <td>7,00</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+      <section class="cadastrar__produtos">
+        <h1>Cadastrar produtos</h1>
+
+        <form>
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <br />
+          <div>
+            <label for="category">Categoria</label>
+            <select name="category" id="category" required>
+              <option disabled selected></option>
+              <option value="Açaís">Açaís</option>
+              <option value="Cremes">Cremes</option>
+              <option value="Bebidas">Bebidas</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="description">Descrição</label>
+            <textarea
+              name="description"
+              id="description"
+              rows="3"
+              placeholder="Descrição do produto"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            <label for="price">Preço</label>
+            <input type="string" name="price" id="price" placeholder="00.00" />
+          </div>
+          <input type="submit" class="btnCadastrar" />
+        </form>
+      </section>
+    </div>
+    <br />
+    <br />
+
+    <footer class="footer">
+      Raphael Argollo @2023 | <a href="index.html">Voltar</a>
+    </footer>
+  </body>
+</html>

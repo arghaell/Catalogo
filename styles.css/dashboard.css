@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.tabelaPrecos {
+  border-radius: 10px;
+  background-color: var(--branco);
+  color: var(--preto);
+  padding: 5px;
+}
+
+table {
+  display: table;
+  text-align: left;
+  border-collapse: collapse;
+  text-indent: initial;
+  border-spacing: 2px;
+  margin: auto;
+}
+
+table td,
+table th {
+  padding: 8px 8px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#description {
+  resize: vertical;
+}
+
+#name,
+#category,
+#description,
+#price {
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 500px;
+}
+
+.btnCadastrar {
+  margin-top: 2em;
+  margin: auto;
+  width: 100%;
+  height: 32px;
+  font-size: 1.25em;
+  background-color: var(--branco);
+  font-family: var(--fonte-primaria);
+  border-radius: 10px;
+  max-width: 500px;
+}
+.btnCadastrar:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Merienda:wght@600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --preto: #03001c;
+  --roxo: #301e67;
+  --azul: #5b8fb9;
+  --verde-mint: #b6eada;
+  --branco: #ffffff;
+  --vermelho: #800701;
+
+  --fonte-primaria: "Lato", sans-serif;
+  --fonte-secundaria: "Dancing Script", cursive;
+  --fonte-terciaria: "Merienda", cursive;
+}
+
+body {
+  background-color: var(--vermelho);
+  color: var(--branco);
+  font-family: var(--fonte-primaria);
+
+  padding: 2em 0;
+  margin-inline: 1rem;
+  font-size: 1rem;
+  max-width: 720px;
+}
+
+h1,
+h2,
+h3,
+.title {
+  text-align: center;
+}
+
+.cabecalho {
+  text-align: center;
+}
+
+.container_principal {
+  max-width: 480px;
+  margin: auto;
+  display: grid;
+  gap: 24px;
+}
+
+.logo {
+  max-width: 55%;
+  margin-bottom: 2em;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.footer {
+  color: var(--branco);
+
+  padding: 18px 0;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--branco);
+  cursor: pointer;
+}
